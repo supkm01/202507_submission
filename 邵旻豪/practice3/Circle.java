@@ -7,6 +7,7 @@ public class Circle {
 	//コンストラクタ
 	public Circle(double radius) {
 		this.radius = radius;
+		area();
 	}
 
 	//面積計算メソッド
