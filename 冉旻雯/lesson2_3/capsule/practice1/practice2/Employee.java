@@ -30,11 +30,11 @@ public class Employee {
 	//給与を設定する
 	public void setSalary(double salary) {
 		if (salary > 0) {
-			System.out.println(salary);
+			this.salary = salary;
 		}
 	}
 
-	//給与を増額
+	//給与を増額 
 	public void raiseSalary(double amount) {
 		if (amount > 0) {
 			salary = salary + amount;
