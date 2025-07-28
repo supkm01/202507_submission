@@ -19,9 +19,9 @@ public class Main {
 
 		//各生徒の個人情報を出力
 		for (Student data : students) {
-			System.out.println("名前：" + data.getName());
-			System.out.println("年齢：" + data.getAge());
-			System.out.println("学号：" + data.getId());
+			System.out.println("名前：" + data.getName()
+			+ "；年齢：" + data.getAge()
+			+"；学号：" + data.getid());
 		}
 
 	}

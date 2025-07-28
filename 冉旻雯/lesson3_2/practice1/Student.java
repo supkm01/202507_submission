@@ -7,13 +7,13 @@ public class Student {
 	// 年齢
 	private int age;
 	//学号
-	private int Id;
+	private int id;
 
 	//コンストラクタ
 	Student(String name, int age, int id) {
 		this.name = name;
 		this.age = age;
-		Id = id;
+		this.id = id;
 	}
 
 	// getter,setter
@@ -33,12 +33,12 @@ public class Student {
 		this.age = age;
 	}
 
-	public int getId() {
-		return Id;
+	public int getid() {
+		return id;
 	}
 
-	public void setId(int id) {
-		Id = id;
+	public void setid(int id) {
+		this.id = id;
 	}
 
 }
