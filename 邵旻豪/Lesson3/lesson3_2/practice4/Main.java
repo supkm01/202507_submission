@@ -16,7 +16,7 @@ public class Main {
 		//本のジャンルが  「フィクション」の本のみのデータをすべて出力する。
 		for (Book book : books) {
 			if (book.getGenre() == "フィクション") {
-				System.out.println(book.getTitle());
+				System.out.println(book);
 			}
 		}
 	}
