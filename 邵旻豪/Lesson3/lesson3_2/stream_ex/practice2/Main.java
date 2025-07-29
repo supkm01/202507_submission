@@ -21,8 +21,8 @@ public class Main {
 		lists.stream()
 				.filter(a -> a.length() >= 5)
 				.filter(s -> s.startsWith("e") == false)
+				//リストの全要素を表示します。
 				.forEach(i -> System.out.println(i));
-		//リストの全要素を表示します。
 
 	}
 
