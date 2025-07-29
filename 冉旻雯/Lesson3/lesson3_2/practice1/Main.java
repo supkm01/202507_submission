@@ -1,28 +1,33 @@
-package lesson3_2.practice1;
+package lesson3_2.stream_ex.practice1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
 	public static void main(String[] args) {
-		//リストの宣言
-		List<Student> students = new ArrayList<Student>();
-		//名前　Alice　年齢19　学号　110120
-		students.add(new Student("Alice", 19, 110120));
-		//名前　Bob　年齢21　学号　110121
-		students.add(new Student("Bob", 21, 110121));
-		//名前　Carol　年齢20　学号　110122
-		students.add(new Student("Carol", 20, 110122));
-		//名前　Dave　年齢19　学号　110123
-		students.add(new Student("Dave", 190, 110123));
+		// リストの宣言
+		List<Person> personList = new ArrayList<Person>();
+		//値を対入
+		personList.add(new Person("tanaka", 28));
+		personList.add(new Person("suziki", 22));
+		personList.add(new Person("izawa", 32));
 
-		//各生徒の個人情報を出力
-		for (Student data : students) {
-			System.out.println("名前：" + data.getName()
-			+ "；年齢：" + data.getAge()
-			+"；学号：" + data.getid());
+		//名前と年齢の部分を表示
+		for (Person data : personList) {
+			System.out.println(data.getName() + "は" + data.getAge() + "歳");
 		}
+
+		//tanakaの部分
+		System.out.println("一件目は" +
+				personList.get(0).getName() + "さんです");
+
+		//　データを年齢の若い人から歳をとった方の順に並び替えをして表示
+		System.out.println(
+				personList.stream()
+						.sorted((s1, s2) -> s1.getAge() - s2.getAge())
+						.collect(Collectors.toList()));
 
 	}
 
