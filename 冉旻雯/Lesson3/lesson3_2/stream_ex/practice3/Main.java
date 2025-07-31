@@ -2,7 +2,6 @@ package lesson3_2.stream_ex.practice3;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
 
@@ -26,10 +25,9 @@ public class Main {
 
 		//在庫数が10未満の商品をリストアップし、商品名と在庫数を表示してください。
 		System.out.println("在庫が10未満の商品:");
-		System.out.println(
 				productList.stream()
 						.filter(e -> e.getStock() < 10)
-						.collect(Collectors.toList()));
+						.forEach(a -> System.out.println(a.getName()+ ":"+ a.getStock()));
 
 	}
 
