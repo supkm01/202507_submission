@@ -1,0 +1,51 @@
+#cake_store{
+    /* 全幅表示で、高さはブラウザの高さに合わせます。*/
+    width: 100%;
+}
+.cake_exhibition{
+    text-align: center;
+}
+.text1{
+     font-family: "Helvetica Neue";
+     margin: 50px 0;
+}
+.text2{
+    font-family: "Arial";
+    margin: 1px 0;
+}
+.cakes{
+   display: flex; 
+   gap: 0 0px;
+   justify-content: center; 
+   margin:50px 0;
+}
+.cake-sample{
+    width: 700px;
+    height:500px;
+    object-fit: cover;
+}
+.btn{
+    width: 150px;
+    padding: 6px 0;
+    background-color:white;
+    color: black;
+    margin-top: 20px;
+    border: 5px solid ;
+    border-color: gainsboro;
+    border-radius: 5px;
+    font-family: "Hiragino Sans";
+}
+footer{
+    text-align: center;
+    margin-top: 60px;
+}
+.links{
+font-family: "Meiryo";
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+.text3{
+   font-family: "sans-serif"; 
+}
